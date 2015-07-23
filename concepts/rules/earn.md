@@ -4,10 +4,10 @@ layout: page
 categories: ["Guides"]
 ---
 # Earn Rules
-*TBD* - what are earn rules?
+Earn rules specify how members earn metrics (such as points) for each activity type. You can create groups of rules for each metric to specify what metric value is calculated when multiple rules are applicable.
 
 ## Rule Definition
-*TBD* - describe the structure of a rule
+Each row on the Rules | Earn Rules screen represents one rule. The "Calculation" column gives instructions to calculate the value of the metrics given. The "Condition" column gives the conditions under which
 
 ### Rule Examples
 
