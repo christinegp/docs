@@ -18,7 +18,7 @@ Change the **status** of a reward to change the visibility of the reward to memb
 
 * *Draft:* Members cannot view the reward. Edit the reward on the console in *draft* mode.
 
-* *Published:* Members can view the reward and are eligible to enter. You are restricted from editing some characteristics of the reward after members redeem it.<!-- Is this true? -->
+* *Published:* Members can view the reward and are eligible to enter. You are restricted from editing some characteristics of the reward after members redeem it.
 
 * *Archived:* Members can no longer view the reward and are ineligible to redeem it. A reward becomes archived when the time frame given for the reward effectivity ends. You can still view all archived rewards on the console.
 
