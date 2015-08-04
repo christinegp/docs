@@ -17,10 +17,15 @@ To further customize content, you can specify a language/country for the content
 In individual presentations, the layout can be customized in various ways using the toolbar at the bottom of the specified content, such as by inputting text, links, and images, choosing a color palette for the presentation of the content, and moving around and changing the size of content.
 
 ## Content Eligibility
+For all content, the marketer can decide which users that content is available to. Through the Segments tab in each individual offer or challenge, the marketer can add or exclude certain segments of users thus making them eligible or ineligible for certain content. 
+
+## How to Use Content Editor
+To use the content editor, the content is added in the master content area. In this area, the content requested is a Heading, Subheading, Body content, Subject, Preheader, Call to Action, and Details. Once inputted into the master content, the offer or challenge information is automatically reformatted to fit various displays. Below the master content, the displays shown are the Primary Email Block, Secondary Email 1 and 2, Tertiary Email Block, Medium Email Block, Small Email Block, Medium Rectangle, and iOS. The formatting and content of each display can be manually edited after the master content has been entered. For each display, the text can be edited, images can be added and altered, and the color palette of the template can be customized. The layout of each of the displays may also be manually adjusted as well by moving around and minimizing/maximizing content. 
 
 ## Content Targeting
 
 ## Content Lifecycle
+The lifecycle of content is dependent upon whether the content is a draft, published, or archived. If the content is a draft, it will remain a draft until it is published by the marketer. Once published, the marketer can input the dates between which the content is available to users or make the content always effective thus becoming always available to users. If the content reaches the end date of effectivity, then the content becomes archived. 
 
 ## Also See
 [Offers](./offers)
