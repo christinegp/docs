@@ -20,7 +20,7 @@ Change the **status** of a challenge to change the visibility of the challenge t
 
 * *Published:* Members can view the challenge and are eligible to enter. You are restricted from editing some characteristics of the challenge (such as *challenge type*) after members enter it.
 
-* *Archived:* Members can no longer view the challenge and are ineligible to enter. A challenge becomes archived when the time frame given for the challenge effectivity ends. You can still view all archived challenges on the console.
+* *Archived:* Members can no longer view the challenge and are ineligible to enter. You can still view all archived challenges on the console.
 
 Change the **effectivity** of a challenge to designate the time frame for which members can view and enter the challenge:
 
