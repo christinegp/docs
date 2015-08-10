@@ -17,7 +17,7 @@ Add more columns to the table in order to create new thresholds that need to be 
 ## Advanced Tiering Rules
 Specify advanced tiering rules to allow tiering up at non-conventional times such as during a promotion. The *condition* column gives the constraints necessary in order to be eligible to advance to a specified tier (outside of the basic tiering rules). Conditions can be authored as a template or an expression. <!-- What is the difference between the two/what do they mean? --> If multiple conditions are specified, all of them must be true for the condition to be met. The *results* column allows you to specify which tier the advanced rule applies to and the expiration of the rule. <!-- Simple vs. Advanced tier? --> (See more about tier expiration below, under *Tier Period and Expiration*.)
 
-## Effectivity and Status
+## Status and Effectivity
 Change the **status** of an advanced tier rule in order to make the rule active:
 
 * *Draft*: The rule is inactive. Edit the rule on the console in *draft* mode.
