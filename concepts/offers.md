@@ -80,7 +80,7 @@ Tags are an internal facing organizational tool that allows you to organize and 
 - *Set*: Add any of the offers you created in the console in a set.
 
 - *Overrides*: You can add any members in the console to the overrides page.
-    <!-- what is an override? -->
+<!-- what is an override? -->
 
 - *Preview*: 
 
