@@ -53,7 +53,7 @@ Communications govern the means to interact and communicate with members via New
 
 
 ## Getting Started
-To get started on the Stellar Loyalty Program, read the [How Tos](./howto) page to learn more about the various Stellar features and functions.
+To get started on the Stellar Loyalty Program, read the [How Tos](./howto) page to learn more about the various Stellar features and functions. In particular, see [Get Started](./howto/getting_started)
 
 ## How Stellar Docs is Organized
 The Stellar Docs contain several tools to help you in better understanding our core loyalty product. 
