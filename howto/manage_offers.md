@@ -5,7 +5,7 @@ categories: ["How To"]
 ---
 # Create and Manage Offers
 
-In this *How To*, we will explore the steps to create and manage offers in the Stellar Program.
+This *How To* will explore the steps to create and manage offers in the Stellar Program.
 
 ## Creating Offers
 
@@ -29,7 +29,7 @@ In this *How To*, we will explore the steps to create and manage offers in the S
 * Click on an offer to view more details 
 * Search for an offer based on a tag or date created by keying in the relevant fields respectively
 
-## Managing Individual Offers
+### Managing Individual Offers
 
 * Click on an individual offer to access a page with more offer settings 
 * Edit offer details, publishing date and effectivity by clicking on the **Edit** button located in each text panel located in the top half of the page
