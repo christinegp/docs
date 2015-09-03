@@ -5,21 +5,35 @@ categories: ["How To"]
 ---
 # Create and Manage Offers
 
-This *How To* will explore the steps to create and manage offers in the Stellar Program.
+This *How To* will explore the steps to create and manage offers in the Stellar platform. 
 
-## Creating Offers
+The steps involved in creating and managing offers are:
 
-### Step 1
+1. [Create a new offer](#newoffer)
+2. [Manage eligibility (optional)](#eligibility)
+3. [Publish the offer](#publish)
+
+Additionally, see
+4. [Finding an offer](#find)
+
+## <a name="newoffer"></a>How to create a new offer
+### Step 1 - Create new offer
 * Click on the **Offers** tab located at the top panel of the page
 * Enter a display name for the offer and click on the *Create* button
 
-### Step 2
+### Step 2 - Provide basic metadata
 * Key in the relevant fields under the pop-up dialogue box
 * Click on *Save* to finalise the offer creation and click on *Delete* to remove the offer 
 
-### Step 3
+### Step 3 - Design display of offer
 * Your offer has been created. We will now look at how to manage these offers.
 
+See [How to Use Content Editor] for details.
+
+### Step 4 - Manage limits and advanced settings (optional)
+
+## <a name="eligibility"></a>How to manage eligibility
+Manage who is eligible for an offer by including and excluding segments and locations.
 
 ## Managing Offers
 
