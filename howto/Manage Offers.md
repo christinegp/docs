@@ -26,7 +26,7 @@ Additionally, see
 * The Tags, Categories, and Tracking Code fields are useful for more advanced features
 * Click on *Save* to finalise the offer creation and click on *Delete* to remove the offer 
 
-### Step 3 - Design display of offer
+### Step 3 - Design Display of Offer
 * Once the offer has been created, click on the individual offer post to navigate to the offer's settings
 * Edit the layout and visual representation of the various offer displays under the **Display** tab
 * Editing the Master Content allows you to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
@@ -34,7 +34,7 @@ Additionally, see
 
 See [How to Use Content Editor] for details.
 
-### Step 4 - Manage limits and advanced settings (Optional)
+### Step 4 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Offers 
 * Click on the edit button under the Limits tab to manage the limits for offer availability for members
 * Click on the edit button under the Tracking portion to manage advanced settings for the offer

@@ -25,7 +25,7 @@ The steps involved in creating and managing challenges are:
 * Enter a desired amount metric to award members for completing a challenge under the *Award* field. *Auto Approve* will allow the Stellar Platform to assign points directly to the member for completing a challenge and would not need to be manually awarded by a marketer
 * Click on *Save* to finalise the challenge creation and click on *Delete* to remove the challenge
 
-### Step 3 - Design display of Challenge
+### Step 3 - Design Display of Challenge
 * Once the challenge has been created, click on the individual challenge post to navigate to the challenge's settings
 * Edit the layout and visual representation of the various challenge displays under the **Display** tab
 * Editing the Master Content allows you to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
@@ -35,7 +35,7 @@ See [How to Use Content Editor] for details.
 ### Step 4 - Manage Eligibility
 Manage who is eligible for an challenge by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
 
-### Step 5 - Manage limits and advanced settings (Optional)
+### Step 5 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Challenges 
 * Click on the edit button under the Limits tab to manage the limits for challenge availability for members
 * Click on the edit button under the Placement portion to manage advanced settings for the challenge
