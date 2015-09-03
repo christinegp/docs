@@ -9,60 +9,50 @@ This *How To* will explore the steps to create and manage offers in the Stellar 
 
 The steps involved in creating and managing offers are:
 
-1. [Create a new offer](#newoffer)
-2. [Manage eligibility (optional)](#eligibility)
-3. [Publish the offer](#publish)
+1. [Create a New Offer](#newoffer)
+2. [Manage Eligibility (optional)](#eligibility)
+3. [Publishing an Offer](#publish)
 
 Additionally, see
-4. [Finding an offer](#find)
+4. [Finding an Offer](#find)
 
-## <a name="newoffer"></a>How to create a new offer
-### Step 1 - Create new offer
-* Click on the **Offers** tab located at the top panel of the page
-* Enter a display name for the offer and click on the *Create* button
+## <a name="newoffer"></a>How to Create a New Offer
+### Step 1 - Create New Offer
+* Click on the **Offers** tab located at the top panel of the page. This will navigate you to the Offers page.
+* Enter a display name for the desired offer and click on the *Create* button
 
-### Step 2 - Provide basic metadata
-* Key in the relevant fields under the pop-up dialogue box
+### Step 2 - Provide Basic Metadata
+* Key in the relevant fields under the pop-up dialogue box of 'Edit Offer'
+* The Tags, Categories, and Tracking Code fields are useful for more advanced features
 * Click on *Save* to finalise the offer creation and click on *Delete* to remove the offer 
 
 ### Step 3 - Design display of offer
-* Your offer has been created. We will now look at how to manage these offers.
+* Once the offer has been created, click on the individual offer post to navigate to the offer's settings
+* Edit the layout and visual representation of the various offer displays under the **Display** tab
+* Editing the Master Content allows you to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
+
 
 See [How to Use Content Editor] for details.
 
 ### Step 4 - Manage limits and advanced settings (optional)
+* Click on the edit button under the Limits tab to manage the limits for offer availability for members
+* Click on the edit button under the Tracking portion to manage advanced settings for the offer
 
-## <a name="eligibility"></a>How to manage eligibility
-Manage who is eligible for an offer by including and excluding segments and locations.
 
-## Managing Offers
+## <a name="eligibility"></a>How to Manage Eligibility
+Manage who is eligible for an offer by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
 
-### Navigating about the Offers Dashboard
-* Being on this screen allows you to view all offers at a glance, create new offers and to search for offers based on tags or an effectivity.
-* Refer to **Creating Offers** to create a new offer
-* Click on an offer to view more details 
+## <a name="publish"></a>Publishing an Offer
+* When an offer is created, its status is set to *draft* mode by default
+* To publish an offer, first click on the desired offer posting to navigate to the offer settings page
+* Click on the edit button on the top right hand panel of the screen
+* Change the status to *publish* and set the effectivity as desired
+* Add *Assignees* to appoint a Marketer to be in charge of the offer 
+
+## <a name="find"></a>Finding an Offer
 * Search for an offer based on a tag or date created by keying in the relevant fields respectively
+* Enter a tag or a tracking code when creating a new offer or by accessing the offer's settings page
 
-### Managing Individual Offers
-
-* Click on an individual offer to access a page with more offer settings 
-* Edit offer details, publishing date and effectivity by clicking on the **Edit** button located in each text panel located in the top half of the page
-* There are 4 buttons located on the bottom half panel namely, **Display**; **Segments**; **Location**; **More Settings**
-
-### Display
-* The display panel allows you to edit the Master Content for the offer and to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
-
-### Segments
-* Use the segments panel to define segmentation for any offer
-* You can choose to limit the offer to a specific segment or to similarly exclude it from a specific segment
-
-### Locations 
-* Use the locations panel to define location targeting for any offer
-* You can choose to limit the offer to a specific location or to similarly exclude it from a specific location
-
-### More Settings
-* Specify limits on offers for each member and in total
-* Specify more details on offer tracking
 
 ## Use-cases for Offers
 
