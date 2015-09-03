@@ -34,7 +34,8 @@ Additionally, see
 
 See [How to Use Content Editor] for details.
 
-### Step 4 - Manage limits and advanced settings (optional)
+### Step 4 - Manage limits and advanced settings (Optional)
+* Go to the *More Settings* tab to access advanced settings for Offers 
 * Click on the edit button under the Limits tab to manage the limits for offer availability for members
 * Click on the edit button under the Tracking portion to manage advanced settings for the offer
 
