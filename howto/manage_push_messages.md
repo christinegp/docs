@@ -1,16 +1,16 @@
 ---
-title: Create and Manage Push Notifications
+title: Create and Manage Push Messages
 layout: page
 categories: ["How To"]
 ---
-# Create and Manage Push Notifications
+# Create and Manage Push Messages
 
 This *How To* will explore the steps to create and manage rewards in the Stellar platform. 
 
-The steps involved in creating and managing Push Notifications are:
+The steps involved in creating and managing Push Messages are:
 
-1. [Create a New Reward](#new)
-2. [Manage Reward Redemptions](#redemptions)
+1. [Create a New Push Messages](#new)
+2. [Manage Push Messages](#manage)
 3. [Publishing a Reward](#publish)
 4. [Finding a Reward](#find)
 5. [Manage Reward Categories](#categories)
@@ -41,7 +41,7 @@ Manage who is eligible for an reward by including and excluding segments and loc
 * Click on the edit button under the Limits tab to manage the different limits for reward availability for members
 
 
-## <a name="redemptions"></a>How to Manage Reward Redemptions 
+## <a name="manage"></a>How to Manage Reward Redemptions 
 * Use this page to manage reward redemptions by members 
 * Click on the **Redemptions** tab located at the left panel of the page. This will navigate you to the Reward Redemptions page
 * Click on the **Export** button to export redemption as an excel spreadsheet. This can be filtered by all redemptions, pending repdemptions, completed redemptions, etc

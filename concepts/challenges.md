@@ -100,4 +100,4 @@ Use the Challenge | Settings | Challenge Categories screen to define categories 
 View all challenge submissions under Challenge | Challenge Responses. You can comment on any challenge submission. You can choose to change the setting of a challenge to **auto approve** to automatically approve the submissions for that challenge. A challenge response has the status **submitted** if it has not been received but neither accepted nor rejected. The status **approved** indicates that either the challenge utilizes the auto approve feature or that the submission has been manually approved. The status **rejected** indicates that the submission is ineligible to receive the challenge award. You must manually reject a submission. You can add a message to the member regarding the rejection and give him/her the opportunity to re-enter the challenge. The status **returned** indicates that the submission was rejected but the member has the opportunity to re-enter the challenge.
 
 ## Also See
-* [Content](./content)
+* [Challenges](../concepts/challenges)

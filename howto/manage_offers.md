@@ -12,9 +12,11 @@ The steps involved in creating and managing offers are:
 1. [Create a New Offer](#newoffer)
 2. [Manage Eligibility (optional)](#eligibility)
 3. [Publishing an Offer](#publish)
-
-Additionally, see
 4. [Finding an Offer](#find)
+5. [Organising an Offer](#organise)
+6. [Managing Ownership](#owner)
+7. [Use-Cases for Offers](#use)
+8. [Also See](#also)
 
 ## <a name="newoffer"></a>How to Create a New Offer
 ### Step 1 - Create New Offer
@@ -23,6 +25,7 @@ Additionally, see
 
 ### Step 2 - Provide Basic Metadata
 * Key in the relevant fields under the pop-up dialogue box of 'Edit Offer'
+* *Display Name* will be the effective name of the offer. *Description* would ideally describe what the offer is used for and its properties. *Offer Action* would determine how the offer is being pushed out to members. 
 * The Tags, Categories, and Tracking Code fields are useful for more advanced features
 * Click on *Save* to finalise the offer creation and click on *Delete* to remove the offer 
 
@@ -32,7 +35,7 @@ Additionally, see
 * Editing the Master Content allows you to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
 
 
-See [How to Use Content Editor] for details.
+See [Edit Content Display](./../using_content_editor) for details.
 
 ### Step 4 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Offers 
@@ -48,14 +51,33 @@ Manage who is eligible for an offer by including and excluding segments and loca
 * To publish an offer, first click on the desired offer posting to navigate to the offer settings page
 * Click on the edit button on the top right hand panel of the screen
 * Change the status to *publish* and set the effectivity as desired
-* Add *Assignees* to appoint a Marketer to be in charge of the offer 
 
 ## <a name="find"></a>Finding an Offer
-* Search for an offer based on a tag or date created by keying in the relevant fields respectively
-* Enter a tag or a tracking code when creating a new offer or by accessing the offer's settings page
+* Search for an offer by keying in the relevant search field
+* Labels, Names, Assignees' Names, Assignees' Public Names, or Tag Names could be searched via the relevant field
+* Further categorisation of the search results could be done by changing the *Status*, *Effectivity*, and *Date* fields 
+
+**Hint: Tags will simplify searching and make things more easily sorted.*
+
+## <a name="organise"></a>Organising an Offer
+* An offer can be organised by first accessing the offer's settings page
+* Click on the offer post and subsequently on the edit button to edit the offer settings
+* Organise the offer by filling in the *Internal Name*, *Categories*, *Tags* and *Tracking Code* fields respectively. This will allow you to easily search and monitor an offer in the future
 
 
-## Use-cases for Offers
+## <a name="owner"></a>Managing Ownership
+* Add *Assignees* to appoint a Marketer to be in charge of the offer 
+* Click on an offer post to access its offer settings
+* Click on the edit button on the right panel of the screen 
+* Key in an Assignee Name under the *Assignees* field and save
+* The Assignee can keep track of his/her tasks/ownership by searching for his/her Assignee name in the search field
+
+
+## <a name="use"></a>Use-Cases for Offers
 
 Offers are mainly used to run campaigns or promotions for your brand. You can choose to publish special offers for high performing groups or segments of your customers to reward them for their high engagement. You could also use offers to push up activity in low performing segments by limiting them to special segments or locations.
+
+
+## <a name="also"></a>Also See
+[Offers](./../../concepts/offers)
 

@@ -60,4 +60,4 @@ Manage who is eligible for an challenge by including and excluding segments and 
 
 
 ## Use-cases for Challenges
-Challenges serve as a means to engage members by challenging them to perform interesting activities. There are various kinds of challenges which are available. See [Challenges](./concepts/challenges) for more details.
+Challenges serve as a means to engage members by challenging them to perform interesting activities. There are various kinds of challenges which are available. See [Challenges](./../../concepts/challenges) for more details.
