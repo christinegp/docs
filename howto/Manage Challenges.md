@@ -42,8 +42,8 @@ Manage who is eligible for an challenge by including and excluding segments and 
 
 
 ## <a name="response"></a>How to Manage Challenge Responses 
-* Use this page to manage member submissions in repsonse to a challenge by either approving or rejecting submissions
-* Click on the **Challenge Responses** tab located at the top panel of the page. This will navigate you to the Challenge Responses page
+* Use this page to manage member submissions in response to a challenge by either approving or rejecting submissions
+* Click on the **Challenge Responses** tab located at the left panel of the page. This will navigate you to the Challenge Responses page
 * Click on the desired challenge response and click either approve or reject to execute that command on the response
 
 
