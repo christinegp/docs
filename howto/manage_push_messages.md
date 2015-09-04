@@ -11,9 +11,14 @@ The steps involved in creating and managing Push Messages are:
 
 1. [Create a New Push Messages](#new)
 2. [Manage Push Messages](#manage)
-3. [Publishing a Reward](#publish)
-4. [Finding a Reward](#find)
-5. [Manage Reward Categories](#categories)
+3. [Publishing a Push Message](#publish)
+4. [Finding a Push Message](#find)
+5. [Organising a Push Message](#organise)
+6. [Managing Ownership](#owner)
+7. [Use-Cases for Push Message](#use)
+8. [Also See](#also)
+
+<!-- bottom part onwards to be done! Copy how-to-challenge for reference-->
 
 ## <a name="new"></a>How to Create a New Reward
 ### Step 1 - Create New Reward

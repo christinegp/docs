@@ -26,7 +26,7 @@ The steps involved in creating and managing rewards are:
 
 ### Step 2 - Provide Basic Metadata
 * Key in the relevant fields under the pop-up dialogue box of 'Edit Reward'
- *Display Name* will be the effective name of the reward. *Description* would ideally describe what the reward is used for and its properties. *SKU* is used for stocktaking purposes. *Attribute Groups* will group rewards based on certain key attributes. *Metric* determines the type of reward used to award members. *Amount* would allow you to determine the size of a reward.
+* *Display Name* will be the effective name of the reward. *Description* would ideally describe what the reward is used for and its properties. *SKU* is used for stocktaking purposes. *Attribute Groups* will group rewards based on certain key attributes. *Metric* determines the type of reward used to award members. *Amount* would allow you to determine the size of a reward.
 * The Tags, Categories, and Tracking Code fields are useful for more advanced features
 * Enter a desired amount of points required for members to redeem a reward under the *Points* field. *Metric* allows you to select a given metric type for tracking the requirements needed for reward redemption (i.e. points, visits, spend, engagement)
 * Click on *Save* to finalise the reward creation and click on *Delete* to remove the reward
@@ -58,8 +58,7 @@ Manage who is eligible for an reward by including and excluding segments and loc
 * When an reward is created, its status is set to *draft* mode by default
 * To publish an reward, first click on the desired reward posting to navigate to the reward settings page
 * Click on the edit button on the top right hand panel of the screen
-* Change the status to *Published* and set the effectivity as desired
-* Add *Assignees* to appoint a Marketer to be in charge of the offer 
+* Change the status to *Published* and set the effectivity as desired 
 
 
 ## <a name="find"></a>Finding a Reward
@@ -92,7 +91,6 @@ Manage who is eligible for an reward by including and excluding segments and loc
 * The Assignee can keep track of his/her tasks/ownership by searching for his/her Assignee name in the search field
 
 ## <a name="use"></a>Use-Cases for Rewards
-
 Rewards serve as a means to reward members for their engagement in challenges. You can create and manage rewards for members to redeem in terms of points. 
 
 ## <a name="also"></a>Also See
