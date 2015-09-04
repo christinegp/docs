@@ -7,12 +7,6 @@ categories: ["Guides"]
 
 Challenges are a mechanism to engage members by challenging them to perform some interesting activities.
 
-Challenges are a type of program content and refer to [content guide](./content) to understand:
-
-* Challenge display
-* Challenge eligibility
-* Challenge lifecycle
-
 ## Challenge Types
 Stellar provides many challenge types.
 
@@ -40,9 +34,13 @@ Use challenge limits to control the number of times and how often members are al
 
 ## Challenge Presentation to Members
 ### Display
-Use the content editor in the *Display* tab to specify what the cover of the challenge should look like on different 
+Use the content editor in the *Display* tab to specify what the cover of the challenge should look like to the member based on the channel and presentation mode where the challenge is rendered. Refer to [content guide](./content) for details.
+
+### Categories
+Use categories to tell the client, in which member facing categories the challenge is included. Interpretation of category is specific to the client.
+
 ## Challenge Lifecyle
-Use status and effectivity to manage when a challenge is in use. Additionally, use assignee to manage ownership within marketing team.
+Use status and effectivity to manage when a challenge is in use. 
 
 ### Status
 Change the **status** of a challenge to change the visibility of the challenge to members:
@@ -60,8 +58,7 @@ Change the **effectivity** of a challenge to designate the time frame for which 
 
 * *Schedule:* Customize the time frame that the challenge is active. Includes the capability to have recurring challenges.
 
-### Assignee
-Choose an **assignee** for a challenge in order to give ownership or responsibility for the challenge to one or more team members. You can easily find the tasks assigned to a specific person by searching for a name in the Challenge search bar.
+
 
 ## Challenge Eligibility
 Use segment or eligibility based eligibility to limit who can see and act on which challenges.
@@ -76,12 +73,27 @@ Use the Challenge | Locations screen to specify one or more eligible locations f
 Use Tracking Code if the challenge URL would be shared on external channels such as email or Facebook and clicks need to be tracked and associated with the challenge. The specified code gets added to the challenge URL. Note that this is not needed for tracking within Stellar apps.
 
 
-## Sorting Challenges
+## Organizing Challenges
+Use tagging, aasignment, searching, filtering, sorting to organize and find challenges.
+
+### Tags
+Tags provide a flexible and easy mechanism to group challenges or just to mark them for quick searches.
+
+### Assignee
+Choose an **assignee** for a challenge in order to give ownership or responsibility for the challenge to one or more team members. You can easily find the tasks assigned to a specific person by searching for a name in the Challenge search bar.
+
+### Searching
+Search for challenges by name, label (display name), tags, or assignees.
+
+### Filtering
+Filter challenges by status and/or effectivity.
+
+### Sorting
+Sort challenges by date created, date updated, or display name.
+
 ### Challenge Categories
 Use the Challenge | Settings | Challenge Categories screen to define categories to organize different types of challenges. Add challenges to a category you have created by editing the *Categories* section of a specific challenge.
 
-### Challenge Tags and Tracking Code
-Give challenges tags and a unique tracking code to differentiate challenges for internal use.
 
 ## Managing Challenge Submissions
 
