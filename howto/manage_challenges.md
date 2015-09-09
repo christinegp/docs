@@ -16,7 +16,8 @@ The steps involved in creating and managing challenges are:
 5. [Organising a Challenge](#organise)
 6. [Managing Ownership](#owner)
 7. [Use-Cases for Challenges](#use)
-8. [Also See](#also)
+8. [Types of Challenges](#type)
+9. [Also See](#also)
 
 ## <a name="newchallenge"></a>How to Create a New Challenge
 ### Step 1 - Create New Challenge
@@ -37,7 +38,7 @@ The steps involved in creating and managing challenges are:
 See [Edit Content Display](./../using_content_editor) for details.
 
 ### Step 4 - Manage Eligibility
-Manage who is eligible for an challenge by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
+Manage who is eligible for a challenge by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
 
 ### Step 5 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Challenges 
@@ -52,14 +53,14 @@ Manage who is eligible for an challenge by including and excluding segments and 
 
 
 ## <a name="publish"></a>Publishing a Challenge
-* When an challenge is created, its status is set to *draft* mode by default
-* To publish an challenge, first click on the desired challenge posting to navigate to the challenge settings page
+* When a challenge is created, its status is set to *draft* mode by default
+* To publish a challenge, first click on the desired challenge posting to navigate to the challenge settings page
 * Click on the edit button on the top right hand panel of the screen
 * Change the status to *publish* and set the effectivity as desired
 
 
 ## <a name="find"></a>Finding a Challenge
-* Search for an challenge based on a tag or date created by keying in the relevant fields respectively
+* Search for a challenge based on a tag or date created by keying in the relevant fields respectively
 * Labels, Names, Assignees' Names, Assignees' Public Names, or Tag Names could be searched via the relevant field
 * Further categorisation of the search results could be done by changing the *Status*, *Effectivity*, and *Date* fields 
 
@@ -73,7 +74,7 @@ Manage who is eligible for an challenge by including and excluding segments and 
 
 ## <a name="owner"></a>Managing Ownership
 * Add *Assignees* to appoint a Marketer to be in charge of the challenge
-* Click on an challenge post to access its challenge settings
+* Click on a challenge post to access its challenge settings
 * Click on the edit button on the right panel of the screen 
 * Key in an Assignee Name under the *Assignees* field and save
 * The Assignee can keep track of his/her tasks/ownership by searching for his/her Assignee name in the search field
@@ -81,6 +82,14 @@ Manage who is eligible for an challenge by including and excluding segments and 
 
 ## <a name="use"></a>Use-Cases for Challenges
 Challenges serve as a means to engage members by challenging them to perform interesting activities. There are various kinds of challenges which are available. 
+
+## <a name="type"></a>Types of Challenges
+There are various types of Challenges that can be created with the Stellar Platform. See the links below for a how-to guide in creating a specific challenge for your brand.
+
+* [Creating and Managing Survey Challenges](./../survey_challenge)
+* [Creating and Managing Photo Challenges](./../photo_challenge)
+* [Creating and Managing Social Media Challenges](./../socialmedia_challenge)
+
 
 ## <a name="also"></a>Also See
 [Challenges](./../../concepts/challenges)

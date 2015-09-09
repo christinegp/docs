@@ -39,7 +39,7 @@ The steps involved in creating and managing rewards are:
 See [Edit Content Display](./../using_content_editor) for details.
 
 ### Step 4 - Manage Eligibility
-Manage who is eligible for an reward by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
+Manage who is eligible for a reward by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
 
 ### Step 5 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Offers 
@@ -55,8 +55,8 @@ Manage who is eligible for an reward by including and excluding segments and loc
 
 
 ## <a name="publish"></a>Publishing a Reward
-* When an reward is created, its status is set to *draft* mode by default
-* To publish an reward, first click on the desired reward posting to navigate to the reward settings page
+* When a reward is created, its status is set to *draft* mode by default
+* To publish a reward, first click on the desired reward posting to navigate to the reward settings page
 * Click on the edit button on the top right hand panel of the screen
 * Change the status to *Published* and set the effectivity as desired 
 
@@ -78,14 +78,14 @@ Manage who is eligible for an reward by including and excluding segments and loc
 * Search for a reward category by typing its name into the search field at the top of the Stellar platform
 
 ## <a name="organise"></a>Organising a Reward
-* An reward can be organised by first accessing the reward's settings page
+* A reward can be organised by first accessing the reward's settings page
 * Click on the reward post and subsequently on the edit button to edit the reward settings
 * Organise the reward by filling in the *Internal Name*, *Categories*, *Tags* and *Tracking Code* fields respectively. This will allow you to easily search and monitor a reward in the future
 
 
 ## <a name="owner"></a>Managing Ownership
 * Add *Assignees* to appoint a Marketer to be in charge of the reward 
-* Click on an reward post to access its reward settings
+* Click on a reward post to access its reward settings
 * Click on the edit button on the right panel of the screen 
 * Key in an Assignee Name under the *Assignees* field and save
 * The Assignee can keep track of his/her tasks/ownership by searching for his/her Assignee name in the search field
