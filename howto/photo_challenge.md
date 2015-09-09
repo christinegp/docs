@@ -7,7 +7,7 @@ categories: ["How To"]
 
 This *How To* will explore the steps to create and manage a Photo Challenge in the Stellar platform. 
 
-The steps involved in creating and publishing photo challenges are systematically the same as creating a normal challenge with the only criteria being that **Photo** is selected as the challenge type. Refer to [Create and Manage Challenges](./../manage_challenges) for more details on how to create a challenge. Follow the steps below after creating a challenge for Photo optimization.  
+The steps involved in creating and publishing Photo Challenges are essentially the same as creating a normal challenge with the only criteria being that **Photo** is selected as the challenge type. Refer to [Create and Manage Challenges](./../manage_challenges) for more details on how to create, manage, publish, organise, and find a challenge. Follow the steps below after creating a challenge for Photo Challenge optimization.  
 
 1. [Create a Photo Challenge](#new)
 2. [Manage Photo Challenge Responses](#response)

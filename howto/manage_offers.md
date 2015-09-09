@@ -35,7 +35,7 @@ The steps involved in creating and managing offers are:
 * Editing the Master Content allows you to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
 
 
-See [Edit Content Display](./../using_content_editor) for details.
+See [Edit Content Display](./../content_editor) for details.
 
 ### Step 4 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Offers 

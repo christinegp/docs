@@ -35,7 +35,7 @@ The steps involved in creating and managing challenges are:
 * Edit the layout and visual representation of the various challenge displays under the **Display** tab
 * Editing the Master Content allows you to view how it is displayed across multiple platforms (i.e. Email Blocks, Leaderboards, iOS, Android, etc.)
 
-See [Edit Content Display](./../using_content_editor) for details.
+See [Edit Content Display](./../content_editor) for details.
 
 ### Step 4 - Manage Eligibility
 Manage who is eligible for a challenge by including and excluding segments and locations under the **Segments** and **Locations** tab respectively.
@@ -89,6 +89,9 @@ There are various types of Challenges that can be created with the Stellar Platf
 * [Creating and Managing Survey Challenges](./../survey_challenge)
 * [Creating and Managing Photo Challenges](./../photo_challenge)
 * [Creating and Managing Social Media Challenges](./../socialmedia_challenge)
+* [Creating and Managing Video Challenges](./../video_challenge)
+* [Creating and Managing View Content Challenges](./../view_content)
+* [Creating and Managing Update Profile Challenges](./../update_profile)
 
 
 ## <a name="also"></a>Also See

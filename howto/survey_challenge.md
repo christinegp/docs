@@ -7,7 +7,7 @@ categories: ["How To"]
 
 This *How To* will explore the steps to create and manage a Survey Challenge in the Stellar platform. 
 
-The steps involved in creating and publishing survey challenges are systematically the same as creating a normal challenge with the only criteria being that **Survey** is selected as the challenge type. Refer to [Create and Manage Challenges](./../manage_challenges) for more details on how to create a challenge. Follow the steps below after creating a challenge for Survey optimization.  
+The steps involved in creating and publishing Survey Challenges are essentially the same as creating a normal challenge with the only criteria being that **Survey** is selected as the challenge type. Refer to [Create and Manage Challenges](./../manage_challenges) for more details on how to create, manage, publish, organise, and find a challenge. Follow the steps below after creating a challenge for Survey Challenge optimization.  
 
 1. [Create a Survey Question](#new)
 2. [Manage Survey Challenge Responses](#response)
@@ -16,7 +16,8 @@ The steps involved in creating and publishing survey challenges are systematical
 
 ## <a name="new"></a>How to Create a Survey Question
 ### Step 1 - Create a Survey Question
-* Click on the desired challenge post that was just created with the challenge type being *Survey*. You will be brought to the Challenge Settings page
+* Create a Challenge post with the type being selected as *Survey*
+* Click on the desired challenge post that was just created to be brought to the Challenge Settings page
 * Click on *Response Settings* at the lower panel of the page
 * Click on the *Edit* button on the right side of the bottom panel to navigate to the *Edit Response Settings* page
 
