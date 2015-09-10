@@ -5,11 +5,11 @@ categories: ["How To"]
 ---
 # Create and Manage Push Messages
 
-This *How To* will explore the steps to create and manage rewards in the Stellar platform. 
+This *How To* will explore the steps to Create and Manage Push Messages in the Stellar platform. 
 
-The steps involved in creating and managing Push Messages are:
+The steps involved in Creating and Managing Push Messages are:
 
-1. [Create a New Push Messages](#new)
+1. [Create a New Push Message](#new)
 2. [Publishing a Push Message](#publish)
 3. [Finding a Push Message](#find)
 4. [Organising a Push Message](#organise)
@@ -17,7 +17,7 @@ The steps involved in creating and managing Push Messages are:
 
 
 ## <a name="new"></a>How to Create a New Push Message
-### Step 1 - Create New Reward
+### Step 1 - Create New Push Message
 * Click on the **Communications** tab located at the top panel of the page. This will navigate you to the Communications page
 * Click on the **Messages** tab on the left panel to navigate to the Messages page
 * To create a new push message, enter a display name for the desired message and select 'Push Notification' before clicking on the *Create* button

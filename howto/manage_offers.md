@@ -5,9 +5,9 @@ categories: ["How To"]
 ---
 # Create and Manage Offers
 
-This *How To* will explore the steps to create and manage offers in the Stellar platform. 
+This *How To* will explore the steps to Create and Manage Offers in the Stellar platform. 
 
-The steps involved in creating and managing offers are:
+The steps involved in Creating and Managing Offers are:
 
 1. [Create a New Offer](#newoffer)
 2. [Manage Eligibility (optional)](#eligibility)

@@ -39,10 +39,10 @@ Offers provide a value exchange to members. You can use the Stellar Program to c
 Challenges form a key component of member activity on the program. You can use the Stellar Program to create, target and manage challenges as well as challenge response from members.
 
 **[Communications](./concepts/communications)**
-Communications govern the means to interact and communicate with members via News Feeds, notifications and emials.
+Communications govern the means to interact and communicate with members via News Feeds, Messages and Emails.
 
 * *News Feeds*: A forum that serves as the main communication channel with members
-* *Push Notifications*: Specify messages to be pushed to members as notifications through the mobile app.
+* *Push Messages*: Specify notifications to be pushed to members as messages through the mobile app.
 * *Operational Emails*: Define emails to be sent to members for operational use-cases (i.e. For password recovery, welcome messages, etc).
 * *Promotional Emails*: Define emails to be sent to members for promotional use-cases (i.e. Sending batch emails for a new campaign).
 
@@ -53,7 +53,7 @@ Communications govern the means to interact and communicate with members via New
 
 
 ## Getting Started
-To get started on the Stellar Loyalty Program, read the [How Tos](./howto) page to learn more about the various Stellar features and functions. In particular, see [Get Started](./howto/getting_started)
+To get started on the Stellar Loyalty Program, read the [How Tos](./howto) page to learn more about the various Stellar features and functions. In particular, see [Get Started](./howto/get_started) to begin.
 
 ## How Stellar Docs is Organized
 The Stellar Docs contain several tools to help you in better understanding our core loyalty product. 

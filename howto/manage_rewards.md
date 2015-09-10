@@ -5,9 +5,9 @@ categories: ["How To"]
 ---
 # Create and Manage Rewards
 
-This *How To* will explore the steps to create and manage rewards in the Stellar platform. 
+This *How To* will explore the steps to Create and Manage Rewards in the Stellar platform. 
 
-The steps involved in creating and managing rewards are:
+The steps involved in Creating and Managing Rewards are:
 
 1. [Create a New Reward](#new)
 2. [Manage Reward Redemptions](#redemptions)
@@ -44,7 +44,7 @@ Manage who is eligible for a reward by including and excluding segments and loca
 ### Step 5 - Manage Limits and Advanced Settings (Optional)
 * Go to the *More Settings* tab to access advanced settings for Offers 
 * Click on the edit button under the Limits tab to manage the limits for offer availability for members
-* Click on the edit button under the Tracking portion to manage advanced settings for the offer
+* Click on the edit button under the Tracking portion to manage advanced settings for the reward
 
 ## <a name="redemptions"></a>How to Manage Reward Redemptions 
 * Use this page to manage reward redemptions by members
@@ -62,7 +62,7 @@ Manage who is eligible for a reward by including and excluding segments and loca
 
 
 ## <a name="find"></a>Finding a Reward
-* Search for an offer by keying in the relevant search field
+* Search for a reward by keying in the relevant search field
 * Labels, Names, Assignees' Names, Assignees' Public Names, or Tag Names could be searched via the relevant field
 * Further categorisation of the search results could be done by changing the *Status*, *Effectivity*, and *Date* fields 
 

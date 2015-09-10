@@ -5,9 +5,9 @@ categories: ["How To"]
 ---
 # Create and Manage Challenges
 
-This *How To* will explore the steps to create and manage challenges in the Stellar platform. 
+This *How To* will explore the steps to Create and Manage Challenges in the Stellar platform. 
 
-The steps involved in creating and managing challenges are:
+The steps involved in Creating and Managing Challenges are:
 
 1. [Create a New Challenge](#newchallenge)
 2. [Manage Challenge Responses](#response)
@@ -16,7 +16,7 @@ The steps involved in creating and managing challenges are:
 5. [Organising a Challenge](#organise)
 6. [Managing Ownership](#owner)
 7. [Use-Cases for Challenges](#use)
-8. [Types of Challenges](#type)
+8. [Challenge Sub-Types](#sub)
 9. [Also See](#also)
 
 ## <a name="newchallenge"></a>How to Create a New Challenge
@@ -79,19 +79,12 @@ Manage who is eligible for a challenge by including and excluding segments and l
 * Key in an Assignee Name under the *Assignees* field and save
 * The Assignee can keep track of his/her tasks/ownership by searching for his/her Assignee name in the search field
 
-
 ## <a name="use"></a>Use-Cases for Challenges
-Challenges serve as a means to engage members by challenging them to perform interesting activities. There are various kinds of challenges which are available. 
+Challenges serve as a means to engage members by challenging them to perform interesting activities. There are various kinds of challenges which are available in the Stellar Platform. 
 
-## <a name="type"></a>Types of Challenges
-There are various types of Challenges that can be created with the Stellar Platform. See the links below for a how-to guide in creating a specific challenge for your brand.
 
-* [Creating and Managing Survey Challenges](./../survey_challenge)
-* [Creating and Managing Photo Challenges](./../photo_challenge)
-* [Creating and Managing Social Media Challenges](./../socialmedia_challenge)
-* [Creating and Managing Video Challenges](./../video_challenge)
-* [Creating and Managing View Content Challenges](./../view_content)
-* [Creating and Managing Update Profile Challenges](./../update_profile)
+## <a name="sub"></a>Challenge Sub-Types
+There are various types of Challenges that the Stellar Platform Offers. Refer to [Create and Manage Challenge Sub-Types](./../manage_challengesub) for more details.
 
 
 ## <a name="also"></a>Also See
