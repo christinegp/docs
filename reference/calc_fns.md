@@ -263,7 +263,15 @@ Time period may be specified as:
 
 * **last****_\<n\>_****m**: last _n_ months; e.g. last2m
 
+* **prev****_\<n\>_****d**: previous _n_ days; e.g. prev5d. The 5 days before the last 5 days. Used for period-to-period comparison.
+
+* **prev****_\<n\>_****w**: previous _n_ weeks; e.g. prev5w. The 5 weeks before the last 5 weeks. Used for period-to-period comparison.
+
+* **prev****_\<n\>_****d**: previous _n_ months; e.g. prev5m. The 5 months before the last 5 minths. Used for period-to-period comparison.
+
 ...
+
+The last 5 days includes today; the last 5 months starts on 06/20/2015 if today is 11/19/2015. the last 5 weeks starts 34 (5 * 7 - 1) days ago.  
 
 ### Groovy Closures
 
