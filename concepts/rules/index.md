@@ -5,6 +5,6 @@ layout: page
 
 # Program Rules
 
-* [Earn Rules](./earn)
+* [Earn Rules](./rules/earn)
 
-* [Tiering Rules](./tiers)
+* [Tiering Rules](./rules/tiers)

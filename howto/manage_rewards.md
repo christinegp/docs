@@ -16,8 +16,9 @@ The steps involved in Creating and Managing Rewards are:
 5. [Manage Reward Categories](#categories)
 6. [Organising a Reward](#organise)
 7. [Managing Ownership](#owner)
-8. [Use-Cases for Rewards](#use)
-9. [Also See](#also)
+8. [Awarding Rewards](#award)
+9. [Use-Cases for Rewards](#use)
+10. [Also See](#also)
 
 ## <a name="new"></a>How to Create a New Reward
 ### Step 1 - Create New Reward
@@ -68,6 +69,7 @@ Manage who is eligible for a reward by including and excluding segments and loca
 
 **Hint: Tags will simplify searching and make things more easily sorted.*
 
+
 ## <a name="categories"></a>Manage Reward Categories
 * Use this page to define categories to organize different types of Rewards.
 * Click on the **Settings** button located on the left tab of the platform
@@ -76,6 +78,7 @@ Manage who is eligible for a reward by including and excluding segments and loca
 * Key in the basic metadata for the relevant fields and click on save
 * Edit the reward category by clicking on the pencil icon on the right side of the reward category post
 * Search for a reward category by typing its name into the search field at the top of the Stellar platform
+
 
 ## <a name="organise"></a>Organising a Reward
 * A reward can be organised by first accessing the reward's settings page
@@ -89,6 +92,17 @@ Manage who is eligible for a reward by including and excluding segments and loca
 * Click on the edit button on the right panel of the screen 
 * Key in an Assignee Name under the *Assignees* field and save
 * The Assignee can keep track of his/her tasks/ownership by searching for his/her Assignee name in the search field
+
+
+## <a name="award"></a>Awarding Rewards
+* To award a reward to a member, go to the Members | Members screen and click on the desired member to award
+* Go to the *Awards* tab located in the bottom panel of the page
+* Select from a list of rewards and click on *Grant Award* once you have selected a reward
+* Key in the relevant fields under the pop-up dialogue box of 'Edit award' and click on the Save button to confirm
+* To manage Reward Awards, go to the Rewards | Reward Awards page to view a list of Reward Awards that are active
+* Click on the *Claim* button of a Reward Award to claim on behalf of the member, hence sending them directly to the redemption page instead
+* Click on the *Cancel* button beside a Reward Award to cancel the said item
+
 
 ## <a name="use"></a>Use-Cases for Rewards
 Rewards serve as a means to reward members for their engagement in challenges. You can create and manage rewards for members to redeem in terms of points. 

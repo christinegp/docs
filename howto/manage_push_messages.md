@@ -24,7 +24,7 @@ The steps involved in Creating and Managing Push Messages are:
 
 ### Step 2 - Provide Basic Metadata
 * Key in the relevant fields under the pop-up dialogue box of 'Edit Message'
-* *Display Name* will be the effective name of the message. *Description* would ideally describe what the message is used for and its properties. *Message Type* determines the nature of the message being offered to members. *Text* will determine the desired message to be pushed out to members. <!-- Target Type?? ---> 
+* *Display Name* will be the effective name of the message. *Description* would ideally describe what the message is used for and its properties. *Message Type* determines the nature of the message being offered to members. *Text* will determine the desired message to be pushed out to members. *Target Type* describes the engagement type that comes along with the Push Message. The Message would contain either a challenge, offer, or a reward that would be pushed to members. 
 * The Tags, Categories, and Tracking Code fields are useful for more advanced features
 * Click on *Save* to finalise the message creation and click on *Delete* to remove the push message
 
