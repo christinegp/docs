@@ -61,7 +61,7 @@ Checks if member belongs to segment 'segment_name'.
 
 #### getMemberMetric ('metric_name')
 
-Returns the current *life time earned* value for metric 'metric_name'.
+Returns the current *life time earned* value for metric 'metric_name'. 'metric_name' can be a metric or activity type name.
 
 	//Get lifetime earned value for metric point
 	getMemberMetric('point')
@@ -77,13 +77,12 @@ Returns the earned value for metric 'metric_name' over 'period'. 'period' parame
 	//Get earned value between 01/01/2015 and 03/31/2015 for metric point
 	getMemberMetric('point', '01/01/2015-03/31/2015')
 
-#### getFilteredMetric ('metric_name', 'period', filter)
+#### getFilteredMetric ('metric_name', filter, 'period')
 
 Same as [getMemberMetric](#metric) but computes the earned value of the metric from only activities matching the groovy expression specified in filter.  
 	
 	//get year=to-date eaned value for metric point including only earnings from activities with spend > 300
-	getFilteredMetric("point", 'ytd',
-		{activity-> activity.spend > 300})
+	getFilteredMetric("point", {activity-> activity.spend > 300}, 'ytd') 
 
 ## Current Activity
 
@@ -106,37 +105,37 @@ These functions apply to activities that include line item attributes such as a 
 
 Number of line items in current activity
 
-#### countActivityItems ('filter')
+#### countActivityItems (filter)
 
 Number of line items in current activity matching filter 'filter'.
 
 	count ({item-> item.sku == 'SKU001'})
 
-### sumActivityItems ('expr')
+### sumActivityItems (expr)
 
-Compute the expression 'expr' for each line item, and return the sum of all of them.
+Compute the expression 'expr' (a Groovy closure) for each line item, and return the sum of all of them.
 
 	sumActivityItems ({item-> item.price * item.quantity})
 
-### sumActivityItems ('expr', 'filter')
+### sumActivityItems (expr, filter)
 
 Compute the expression 'expr' for each line item matching filter 'filter', and return the sum of all of them.
 
 	sumActivityItems ({item-> item.price * item.quantity}, {item-> item.sku == 'SKU001'})
 
-### maxActivityItems ('expr')
+### maxActivityItems (expr)
 
 Compute the expression 'expr' for each line item, and return the maximum value among them.
 
-### maxActivityItems ('expr', 'filter')
+### maxActivityItems (expr, filter)
 
 Compute the expression 'expr' for each line item matching filter 'filter', and return the maximum value among them.
 
-### minActivityItems ('expr')
+### minActivityItems (expr)
 
 Compute the expression 'expr' for each line item, and return the minimum value among them.
 
-### minActivityItems ('expr', 'filter')
+### minActivityItems (expr, filter)
 
 Compute the expression 'expr' for each line item matching filter 'filter', and return the minimum value among them.
 
@@ -152,7 +151,7 @@ Compute the expression 'expr' for each line item matching filter 'filter', and r
 
 These functions operate on previously processed member activities.
 
-#### countHistoryItems (activityType, period)
+#### countHistoryItems ('activityType', 'period')
 
 Return the count of activities of type 'activityType' in period 'period'.
 
@@ -160,7 +159,7 @@ Return the count of activities of type 'activityType' in period 'period'.
 	countHistoryItems (
 		'purchase', 'ytd')
 
-#### sumHistoryItems (activityType, attribute, period)
+#### sumHistoryItems ('activityType', 'attribute', 'period')
 
 Return the sum of values for attribute 'attribute' for activities of type 'activityType' in period 'period'.
 
@@ -169,16 +168,17 @@ Return the sum of values for attribute 'attribute' for activities of type 'activ
 		'purchase', 'spend', 'ytd')
 
 
-#### minHistoryItems (activityType, period)
-#### maxHistoryItems (activityType, period)
+#### minHistoryItems ('activityType', 'period')
+#### maxHistoryItems ('activityType', 'period')
 
-#### countHistoryItemsFilter(activityType, period, filter)
+#### countHistoryItemsWithFilter('activityType', filter, 'period')
 
 Return the count of activities of type 'activityType' in period 'period' matching filter 'filter'.
 
 	countHistoryItemsFilter (
-		'purchase', 'ytd',
-		{activity-> activity.spend > 10})
+		'purchase',
+		{activity-> activity.spend > 10},
+                'ytd')
 
 ## Lookups
 
@@ -251,14 +251,15 @@ Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the av
 ### <a name="period"></a> Specifying Time Periods
 Time period may be specified as:
 
-* **_mm/dd/yyyy_-_mm/dd/yyyy_**: Period between the first date and the second date
+* **_MM/dd/yyyy_-_MM/dd/yyyy_**: Period between the first date and the second date
+
+* **alltime**: all time
 
 * **ytd**: Year to date
 
 * **mtd**: Month to date
 
 * **last****_\<n\>_****d**: last _n_ days; e.g. last5d
-
 * **last****_\<n\>_****w**: last _n_ weeks; e.g. last3w
 
 * **last****_\<n\>_****m**: last _n_ months; e.g. last2m
@@ -271,7 +272,8 @@ Time period may be specified as:
 
 ...
 
-The last 5 days includes today; the last 5 months starts on 06/20/2015 if today is 11/19/2015. the last 5 weeks starts 34 (5 * 7 - 1) days ago.  
+The last 5 days includes today; the last 5 months starts on 06/20/2015 if today is 11/19/2015. the last 5 weeks starts 34 (5 * 7 - 1) days ago. 
+All times are 12am midnight. Date is in GMT.   
 
 ### Groovy Closures
 
