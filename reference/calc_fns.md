@@ -159,17 +159,18 @@ Return the count of activities of type 'activityType' in period 'period'.
 	countHistoryItems (
 		'purchase', 'ytd')
 
-#### sumHistoryItems ('activityType', 'attribute', 'period')
+#### sumHistoryItems ('activityType', 'attributeName', 'period')
 
-Return the sum of values for attribute 'attribute' for activities of type 'activityType' in period 'period'.
+Return the sum of values for attribute 'attributeName' for activities of type 'activityType' in period 'period'. "attributeName"
+could be a header attribute for an activity, or a metric. 
 
 	// Total spend from purchases
 	sumHistoryItems (
 		'purchase', 'spend', 'ytd')
 
 
-#### minHistoryItems ('activityType', 'period')
-#### maxHistoryItems ('activityType', 'period')
+#### minHistoryItems ('attributeName', 'period')
+#### maxHistoryItems ('attributeName', 'period')
 
 #### countHistoryItemsWithFilter('activityType', filter, 'period')
 
@@ -182,18 +183,22 @@ Return the count of activities of type 'activityType' in period 'period' matchin
 
 ## Lookups
 
-Lookups provide the capability to extract some calculation logic in tables. A lookup table has one or more key columns, and one or more value columns. An example lookup table, where 'member_tier' and 'booking_code' are keys and 'bonus' is value:
+Lookups provide the capability to extract some calculation logic in tables. A lookup table has one or more key columns, and one or more value columns. 
+An example lookup table, where 'member_tier' and 'booking_code' are keys and 'bonus' and 'point_bonus' is value:
 
-| member_tier | booking_code | bonus
-|-------------|--------------|------
-| Silver      | E            | 0.10
-| Silver      | M            | 0.25
-| Gold        | E            | 0.20
-| Gold        | M            | 0.45
+| member_tier | booking_code | bonus | point_bonus
+|-------------|--------------|------ | -------------
+| Silver      | E            | 0.10  | 0.05
+| Silver      | M            | 0.25  | 0.15
+| Gold        | E            | 0.20  | 0.20
+| Gold        | M            | 0.45  | 0.35
+| default     |              | 0.05  | 0.05
+
+The example assumes 'bonus' is a discount rate and 'point_bonus' is additional points awarded to different members. 
 
 Instead of coding how to compute the bonus based on member_tier and booking_code in rules using expressions, it can be looked up from the above lookup table.
 
-#### getLookupValue (lookup_name, array_of_keys, value_column)
+#### getLookupValue ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the matching value for column 'value_column'.
 
@@ -202,7 +207,7 @@ Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the ma
 		[getMemberTier(), getActivityValue('booking_code')], 
 		'bonus')
 
-#### getLookupValues (lookup_name, array_of_keys, value_column)
+#### getLookupValues ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the list of matching values for column 'value_column'. Difference from *getLookupValue* is that in this case, multiple matches are possible.
 
@@ -212,7 +217,7 @@ Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the li
 		'bonus')
 
 
-#### inLookup (match_value, lookup_name, array_of_keys, value_column)
+#### inLookup ('match_value', 'lookup_name', array_of_keys, 'value_column')
 
 Check if match_value is one of the values in column 'value_column' in the lookup table 'lookup_name' matching keys in the array 'array_of_keys'. 
 
@@ -226,25 +231,55 @@ Check if match_value is one of the values in column 'value_column' in the lookup
 		lookup_name, 
 		array_of_keys, value_column)
 
-#### countLookupValues (lookup_name, array_of_keys, value_column)
+#### countLookupValues ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the count of matching values for column 'value_column'.
 
-#### sumLookupValues (lookup_name, array_of_keys, value_column)
+#### sumLookupValues ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the sum of matching values for column 'value_column'.
 
-#### maxLookupValues (lookup_name, array_of_keys, value_column)
+#### maxLookupValues ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the maximum of matching values for column 'value_column'.
 
-#### minLookupValues (lookup_name, array_of_keys, value_column)
+#### minLookupValues ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the minimum of matching values for column 'value_column'.
 
-#### avgLookupValues (lookup_name, array_of_keys, value_column)
+#### avgLookupValues ('lookup_name', array_of_keys, 'value_column')
 
 Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the average of matching values for column 'value_column'.
+
+## Analytics-centric Functions
+
+A few additional functions that are used mainly in analytics queries.
+
+#### sumHistoryItems ('attributeName', filter, 'period')
+Return the sum of values for attribute 'attributeName', with activities in a given period, further filtered by a filter closure. 
+The function in 'previous activities' section with the same name can only filter activity type, is a special version of this function. 
+
+
+	// Total spend from purchases with spending greater than 100 dollars
+	sumHistoryItems ('spend', {it.sl_type == 'purchase' && it.spend > 100}, 'ytd')
+		
+#### sumHistoryItems (valueClosure, filter, 'period')
+This version of the 'sumHistoryItems' is even more flexible. The valueClosure is a closure that can return arbitrary values using activity 
+attributes.
+
+	// Total tax paid from purchases with spending greater than 100 dollars, assumed discountRate is a header attribute for each purchase
+	sumHistoryItems ({it.spend * it.discountRate}, {it.sl_type == 'purchase' && it.spend > 100}, 'ytd')
+
+#### groupHistoryItems ('attributeName', groupBys, filter, 'period')
+Operate on all activities in a given period 'period' filtered by 'filter'. Sum up the attribute 'attributeName' group by a number of one or 
+multiple, return a map of Key/Value pairs. Each element in the groupBy list can be an activity header attribute or 'activity_date', 'activity_month', 
+'activity_year'.
+
+	// Returns spending on each day in the last 3 months, as a map from Date to spending
+	groupHistoryItems ('spend', ['activity_date'], {it.sl_type == 'purchase'}, 'last3m')
+
+
+
 
 ## Supporting Details
 
