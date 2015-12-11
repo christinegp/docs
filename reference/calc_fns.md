@@ -253,7 +253,7 @@ Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the av
 
 ## Analytics-centric Functions
 
-A few additional functions that are used mainly in analytics queries.
+A few additional functions are used mainly in analytics queries.
 
 #### sumHistoryItems ('attributeName', filter, 'period')
 Return the sum of values for attribute 'attributeName', with activities in a given period, further filtered by a filter closure. 
@@ -267,18 +267,16 @@ The function in 'previous activities' section with the same name can only filter
 This version of the 'sumHistoryItems' is even more flexible. The valueClosure is a closure that can return arbitrary values using activity 
 attributes.
 
-	// Total tax paid from purchases with spending greater than 100 dollars, assumed discountRate is a header attribute for each purchase
+	// Total discount from purchases with spending greater than 100 dollars, assumed discountRate is a header attribute for each purchase
 	sumHistoryItems ({it.spend * it.discountRate}, {it.sl_type == 'purchase' && it.spend > 100}, 'ytd')
 
 #### groupHistoryItems ('attributeName', groupBys, filter, 'period')
-Operate on all activities in a given period 'period' filtered by 'filter'. Sum up the attribute 'attributeName' group by a number of one or 
-multiple, return a map of Key/Value pairs. Each element in the groupBy list can be an activity header attribute or 'activity_date', 'activity_month', 
+Operate on all activities in a given period 'period' filtered by 'filter'. Sum up the attribute 'attributeName' group by one or 
+multiple activity attributes, return a map of Key/Value pairs. Each element in the groupBy list can be an activity header attribute or 'activity_date', 'activity_month', 
 'activity_year'.
 
 	// Returns spending on each day in the last 3 months, as a map from Date to spending
 	groupHistoryItems ('spend', ['activity_date'], {it.sl_type == 'purchase'}, 'last3m')
-
-
 
 
 ## Supporting Details
