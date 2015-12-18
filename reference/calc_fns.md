@@ -77,12 +77,12 @@ Returns the earned value for metric 'metric_name' over 'period'. 'period' parame
 	//Get earned value between 01/01/2015 and 03/31/2015 for metric point
 	getMemberMetric('point', '01/01/2015-03/31/2015')
 
-#### getFilteredMetric ('metric_name', filter, 'period')
+#### getMemberMetric ('metric_name', filter, 'period')
 
 Same as [getMemberMetric](#metric) but computes the earned value of the metric from only activities matching the groovy expression specified in filter.  
 	
 	//get year=to-date eaned value for metric point including only earnings from activities with spend > 300
-	getFilteredMetric("point", {activity-> activity.spend > 300}, 'ytd') 
+	getMemberMetric("point", {activity-> activity.spend > 300}, 'ytd') 
 
 ## Current Activity
 
@@ -159,18 +159,27 @@ Return the count of activities of type 'activityType' in period 'period'.
 	countHistoryItems (
 		'purchase', 'ytd')
 
-#### sumHistoryItems ('activityType', 'attributeName', 'period')
+#### sum/max/min/avgHistoryItems ('attributeName', 'period')
 
-Return the sum of values for attribute 'attributeName' for activities of type 'activityType' in period 'period'. "attributeName"
+Return the sum, max, min, or average of an attribute in period 'period'
+
+	// Number of points earned year-to-date. See section on [Specifying Metric](#metric) for syntax point:earn
+	sumHistoryItems ('point:earn', 'ytd')
+
+#### sum/max/min/avgHistoryItems ('activityType', 'attributeName', 'period')
+
+Return the sum, max, min, or average of values for attribute 'attributeName' for activities of type 'activityType' in period 'period'. "attributeName"
 could be a header attribute for an activity, or a metric. 
 
 	// Total spend from purchases
-	sumHistoryItems (
-		'purchase', 'spend', 'ytd')
+	sumHistoryItems ('purchase', 'spend', 'ytd')
+	
+#### sumHistoryItems (valueClosure, activityFilter, itemFilter, 'period')
+This is the most powerful version of sumHistoryItems. The valueClosure is a closure that can return arbitrary values using activity 
+attributes. It is provided with the line item (it) and activity (ac) at run time 
 
-
-#### minHistoryItems ('attributeName', 'period')
-#### maxHistoryItems ('attributeName', 'period')
+	// For purchase activities with spending higher than 100, calculate tax paid for line items that cost more than 30 dollars, 
+	sumHistoryItems ({it, ac->it.price * it.quantity * ac.taxtRate}, {it.sl_type == 'purchase' && it.spend > 100}, {it.price > 30}, 'ytd')
 
 #### countHistoryItemsWithFilter('activityType', filter, 'period')
 
@@ -255,10 +264,9 @@ Lookup the lookup table 'lookup_name' based on 'array_of_keys' and return the av
 
 A few additional functions are used mainly in analytics queries.
 
-#### sumHistoryItems ('attributeName', filter, 'period')
-Return the sum of values for attribute 'attributeName', with activities in a given period, further filtered by a filter closure. 
+#### sum/max/min/avgHistoryItems ('attributeName', filter, 'period')
+Return the sum/max/min/average of values for attribute 'attributeName', with activities in a given period, further filtered by a filter closure. 
 The function in 'previous activities' section with the same name can only filter activity type, is a special version of this function. 
-
 
 	// Total spend from purchases with spending greater than 100 dollars
 	sumHistoryItems ('spend', {it.sl_type == 'purchase' && it.spend > 100}, 'ytd')
@@ -280,6 +288,25 @@ multiple activity attributes, return a map of Key/Value pairs. Each element in t
 
 
 ## Supporting Details
+
+### Objects Available in Execution Context
+While being executed, a variable 'rc' (stands for Rule Context) is made available to you. From rc you can access activity and even the line items list:
+
+	// Access activity 
+	rc.activity
+	
+	// access activity items
+	rc.activity.items   or directly though
+	rc.lineitems
+
+### <a name="metric"></a> Specifying Metric
+There are 4 variants of each metric: earn, redeem, expire, and balance. By default, we return balance value for a metric.
+To ask for a specific variant of the metric value, simply append the variant to the end of the metric name separated by :.
+
+	// Year-to-date points redeemed
+	sumHistoryItems ('point:redeem', {true}, 'ytd')
+	// Year-to-date points earned
+	sumHistoryItems ('point:earn', {true}, 'ytd')
 
 ### <a name="period"></a> Specifying Time Periods
 Time period may be specified as:
